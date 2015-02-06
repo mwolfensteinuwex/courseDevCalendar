@@ -3,6 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+var sequence = ["#jan", "#feb", "#mar", "#apr", "#may", "#jun", "#jul", "#aug", "#sep", "#oct", "#nov", "#dec"];
+
 $(document).ready(function(){
     $("span.fall").hide();
     $("span.spring").hide();
@@ -14,20 +16,7 @@ $(document).ready(function(){
         $(".spring").show();
         $(".fall").hide();
         $(".summer").hide();
-        $("#may").insertBefore("#jan");
-        $("#jun").insertAfter("#may");
-        $("#jul").insertAfter("#jun");
-        $("#aug").insertAfter("#jul");
-        $("#sep").insertAfter("aug");
-        $("#oct").insertAfter("#sep");
-        $("#nov").insertBefore("#jan");
-        $("#dec").insertBefore("#jan");
         
-        
-        
-
-
-
 
     });
 });
