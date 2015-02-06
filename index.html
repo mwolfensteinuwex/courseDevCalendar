@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Course Development Timeline Calendar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="newcss.css">
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="newjavascript.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="devNotes">
+                <p><em>Dev Notes: The items in January and February are clickable/tapable. Interact with them to see examples of modal windows that can be created for each calendar item.</em></p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h1>Course Development Timeline <span class="spring">(Spring Term)</span><span class="fall">(Fall Term)</span><span class="summer">(Summer Term)</span></h1>
+            </div>
+            <div id="termSelect" class="col-lg-4 col-md-4 col-sm-12">
+                <button class="btn btn-default" type="submit" id="allSelect"><strong>All</strong></button>
+                <button class="btn btn-default" type="submit" id="fallSelect"><strong>Fall</strong></button>            
+                <button class="btn btn-default" type="submit" id="springSelect"><strong>Spring</strong></button>
+                <button class="btn btn-default" type="submit" id="summerSelect"><strong>Summer</strong></button>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4" id="jan">
+            <div class="month">
+            <h2>January</h2>
+            <div class="spring">
+            <p class="deadline" data-toggle="modal" data-target="#springCourseLive">Spring Term - Course Live</p>
+            </div>
+            <div class="fall">
+            <p  class="cycleStart">Fall Cycle Begins</p>
+            </div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="feb">
+            <div class="month" >
+            <h2>February</h2>
+            <div class="generalDev">
+            <p data-toggle="modal" data-target="#planRetreat">Start Planning Faculty Retreat</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="mar">
+            <div class="month">
+            <h2>March</h2>
+            <div class="generalDev">
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="apr">
+            <div class="month">
+            <h2>April</h2>
+            <div class="spring">
+                <p>French Fries</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="may">
+            <div class="month">
+            <h2>May</h2>
+            <div class="generalDev">
+            <p>Faculty Retreat</p>   
+            </div>
+            <div class="spring">
+            <p class="cycleStart">Spring Cycle Begins</p>
+            </div>
+            <div class="spring">
+            <p>Start 1:1 Consulting</p>
+            <p>New Technology Requirements</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer">
+                <p class="deadline">Summer Term - Course Live</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="jun">
+            <div class="month">
+            <h2>June</h2>
+            <div class="spring">
+            <p>New Technology Meeting</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-3 col-sm-4" id="jul">
+            <div class="month">
+            <h2>July</h2>
+            <div class="spring">
+            <p>Course Shells Created in D2L</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4"  id="aug">
+            <div class="month">
+            <h2>August</h2>
+            <div class="spring">
+            <p>Course Structure Finalized</p>
+            <p>ID Briefs Media on Course</p>
+            <p>Initial Course Design Complete</p>
+            <p>Textbook(s) Selected (If Any)</p>
+            </div>
+            <div class="fall">
+            <p class="deadline">Fall Term - Course Live</p>
+            </div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="sep">
+            <div class="month">
+            <h2>September</h2>
+            <div class="spring">
+            <p>Consultation to Establish Media Plan</p>
+            <p>Media Consultation Performed</p>
+            <p>First Media Sample/Test Submitted</p>
+            <p>Media Sample/Test Response</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="oct">
+            <div class="month">
+            <h2>October</h2>
+            <div class="spring">
+            <p>50% of Media Submitted for Development</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="nov">
+            <div class="month">
+            <h2>November</h2>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4" id="dec">
+            <div class="month">
+            <h2>December</h2>
+            <div class="spring">
+            <p>Video Production Complete</p>
+            <p>Course Development Complete</p>
+            <p>100% of Media Submitted for Development</p>
+            </div>
+            <div class="generalDev">
+            <p>Revisions Set</p>
+            </div>
+            <div class="fall"></div>
+            <div class="summer"></div>
+            </div>
+        </div>
+        </div>
+            <!--Modal content below this-->
+            <!--Spring Course Live-->
+            <div class="modal fade" id="springCourseLive" tabindex="-1" role="dialog" aria-labelledby="springCourseLiveLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="springCourseLiveLabel">Spring Course Live</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>100% of the course is finished by the day the course opens (Preview Week).</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!--Plan Faculty Retreat-->
+            <div class="modal fade" id="planRetreat" tabindex="-1" role="dialog" aria-labelledby="planRetreatLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="planRetreatLabel">Start Planning Faculty Retreat</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Propose a mandatory kick-off meeting with Program Managers, ID, & Media.</p>
+                            <p>Program managers have leveraged <a href="http://doodle.com/" target="_blank">Doodle</a> in the past to pick dates for faculty retreats.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+        </div>
+    </body>
+</html>

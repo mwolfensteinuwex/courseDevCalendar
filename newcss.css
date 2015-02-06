@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+h2{
+    padding: 5px 3px 3px 5px;
+    font-size: 1.5em;
+    font-family: "Museo Sans 900", helvetica, sans-serif;
+    margin-top: 3px;
+    background-color: #9D9D9E;
+    color: #FFFFFF;
+}
+
+p{
+    padding: 0px 5px 0px 5px;
+    background-color: #FFFFFF;
+    margin: 5px 2px 5px 2px;
+    padding: 2px 0px 2px 4px;
+}
+
+.month{
+    margin: 10px 0px 10px 0px;
+    height: 300px;
+    background-color: #D4D5D6;
+    
+}
+
+.deadline{
+    color: #B2120E;
+    font-weight: bold;
+}
+
+.spring {
+    
+}
+
+.fall {
+    
+}
+
+.summer {
+    
+}
+
+.spring p{
+    border-left: solid 6px #62B447;
+    cursor: pointer;
+}
+
+.fall p{
+    border-left: solid 6px #D18229;
+    cursor: pointer;
+}
+
+.summer p{
+    border-left: solid 6px #D5BA2A; 
+    cursor: pointer;
+}
+
+.generalDev p{
+    border-left: solid 6px #4287A7;
+    cursor: pointer;
+}
+
+.cycleStart {
+    font-weight: bold;
+    font-size: 1.1em;
+    /*border: solid #903 3px;*/
+}
+
+#termSelect {
+    margin: 1.34em 0em .34em 0em;
+}
+
+#springSelect {
+    border-color: #62B447;
+    background-color: #83C469;
+    width: 6em;
+    margin: 5px 0px 0px 5px;
+}
+
+#fallSelect {
+    border-color: #D18229;
+    background-color: #E0B238;
+    width: 6em;
+    margin: 5px 0px 0px 5px;
+}
+
+#summerSelect {
+    border-color: #D5BA2A;
+    background-color: #E5D268;
+    width: 6em;
+    margin: 5px 0px 0px 5px;
+}
+
+#allSelect {
+    border-color: #4287A7;
+    background-color: #77A6D0;
+    width: 6em;
+    margin: 5px 0px 0px 5px;
+}
+
+#devNotes{
+    padding-top: 5px;
+}
+/* 
+    Created on : Jan 28, 2015, 3:28:39 PM
+    Author     : moses.wolfenstein
+*/
+
