@@ -23,7 +23,7 @@ p{
     margin: 10px 0px 10px 0px;
     height: 300px;
     background-color: #D4D5D6;
-    
+
 }
 
 .deadline{
@@ -32,15 +32,15 @@ p{
 }
 
 .spring {
-    
+    font-size: 200%;
 }
 
 .fall {
-    
+
 }
 
 .summer {
-    
+
 }
 
 .spring p{
@@ -54,7 +54,7 @@ p{
 }
 
 .summer p{
-    border-left: solid 6px #D5BA2A; 
+    border-left: solid 6px #D5BA2A;
     cursor: pointer;
 }
 
@@ -104,7 +104,7 @@ p{
 #devNotes{
     padding-top: 5px;
 }
-/* 
+/*
     Created on : Jan 28, 2015, 3:28:39 PM
     Author     : moses.wolfenstein
 */
