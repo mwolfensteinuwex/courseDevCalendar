@@ -6,6 +6,7 @@
 
 
 $(document).ready(function(){
+    var $sequence = $("#year .months");
     $("span.fall").hide();
     $("span.spring").hide();
     $("span.summer").hide();
@@ -14,7 +15,6 @@ $(document).ready(function(){
         $(".spring").show();
         $(".fall").hide();
         $(".summer").hide();
-        var $sequence = $("#year .months");
         var springOrder = [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3];
         var springSequence = document.getElementById("year");
         for (var i = 0, l = springOrder.length; i < l; i++) {
@@ -27,6 +27,11 @@ $(document).ready(function(){
         $(".fall").show();
         $(".spring").hide();
         $(".summer").hide();
+        var fallOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        var fallSequence = document.getElementById("year");
+        for (var i = 0, l = fallOrder.length; i < l; i++) {
+            fallSequence.appendChild($sequence.get(fallOrder[i]));
+        };
     });
 
     $("#summerSelect").click(function(){
@@ -42,6 +47,11 @@ $(document).ready(function(){
         $("span.summer").hide();
         $("span.fall").hide();
         $("span.spring").hide();
+        var fallOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        var fallSequence = document.getElementById("year");
+        for (var i = 0, l = fallOrder.length; i < l; i++) {
+            fallSequence.appendChild($sequence.get(fallOrder[i]));
+        };
         
     });
 });
