@@ -21,6 +21,7 @@ and open the template in the editor.
             <div class="col-lg-12 col-md-12 col-sm-12" id="devNotes">
                 <p><em>Dev Notes: All items should now be clickable.</em></p>
             </div>
+            <!--This is all top of the page content, it includes the title and the buttons to select terms-->
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <h1>Course Development Timeline <span class="spring">(Spring Term)</span><span class="fall">(Fall Term)</span><span class="summer">(Summer Term)</span></h1>
             </div>
@@ -31,618 +32,619 @@ and open the template in the editor.
                 <button class="btn btn-default" type="submit" id="summerSelect"><strong>Summer</strong></button>
             </div>
         </div>
-        <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4" id="jan">
-            <div class="month">
-            <h2>January</h2>
-            <div class="spring">
-                <p class="deadline" data-toggle="modal" data-target="#springCourseLive">Spring Term - Course Live</p>
-            </div>
-            <div class="fall">
-                <p  class="cycleStart">Fall Cycle Begins</p>
-                <p data-toggle="modal" data-target="#schedConsult">Prepare for and Schedule 1:1 Consultations</p>
-                <p data-toggle="modal" data-target="#requestShells">Request New Development/Revision Course Shells</p>
-                <p data-toggle="modal" data-target="#instructorAccounts">Create New Instructor Accounts for D2L</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="feb">
-            <div class="month" >
-            <h2>February</h2>
-            <div class="generalDev">
-                <p data-toggle="modal" data-target="#planRetreat">Start Planning Faculty Retreat</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
-                <p data-toggle="modal" data-target="#idTech">Identify Technology Requirements</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="mar">
-            <div class="month">
-            <h2>March</h2>
-            <div class="generalDev"></div>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports for Course Revisions</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#techDiscuss">Discuss Technology Requirements</p>
-                <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
-                <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media on Course</p>
-                <p data-toggle="modal" data-target="#initDesignComplete">Initial Course Design Complete and Development Begins</p>
-                <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbook(s) Selected (If Any)</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="apr">
-            <div class="month">
-            <h2>April</h2>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#schedConsult">Prepare for and Schedule 1:1 Consultations</p>
-                <p data-toggle="modal" data-target="#requestShells">Request New Development/Revision Course Shells</p>
-                <p data-toggle="modal" data-target="#instructorAccounts">Create New Instructor Accounts for D2L</p>
-            </div>
-            <div class="fall">
-                <p>Course Shells Created in D2L?</p>
-                <p data-toggle="modal" data-target="#mediaPlan">Consultation to Establish Media Plan</p>
-                <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
-                <p data-toggle="modal" data-target="#mediaTestSubmit">First Media Sample/Test Submitted</p>
-                <p data-toggle="modal" data-target="#mediaTestResponse">Media Sample/Test Response</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="may">
-            <div class="month">
-            <h2>May</h2>
-            <div class="generalDev">
-                <p data-toggle="modal" data-target="#facultyRetreat">Faculty Retreat</p>   
-            </div>
-            <div class="spring">
-                <p class="cycleStart">Spring Cycle Begins</p>
-            </div>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
-                <p data-toggle="modal" data-target="#idTech">Identify Technology Requirements</p>
-                <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% of Media Submitted for Development</p>
-            </div>
-            <div class="summer">
-                <p class="deadline">Summer Term - Course Live</p>
-            </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="jun">
-            <div class="month">
-            <h2>June</h2>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#techDiscuss">Discuss Technology Requirements</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="jul">
-            <div class="month">
-            <h2>July</h2>
-            <div class="spring">
-                <p>Course Shells Created in D2L?</p>
-            </div>
-            <div class="fall">
-                <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
-                <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
-                <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% of Media Submitted for Development</p>
-                <p data-toggle="modal" data-target="#qcComplete">Quality Check Process Completed</p>
-                <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4"  id="aug">
-            <div class="month">
-            <h2>August</h2>
-            <div class="spring">
-                <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
-                <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media on Course</p>
-                <p data-toggle="modal" data-target="#initDesignComplete">Initial Course Design Complete and Development Begins</p>
-                <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbook(s) Selected (If Any)</p>
-            </div>
-            <div class="fall">
-            <p class="deadline" data-toggle="modal" data-target="#fallCourseLive">Fall Term - Course Live</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="sep">
-            <div class="month">
-            <h2>September</h2>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#mediaPlan">Consultation to Establish Media Plan</p>
-                <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
-                <p data-toggle="modal" data-target="#mediaTestSubmit">First Media Sample/Test Submitted</p>
-                <p data-toggle="modal" data-target="#mediaTestResponse">Media Sample/Test Response</p>
-            </div>
-            <div class="fall"></div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="oct">
-            <div class="month">
-            <h2>October</h2>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% of Media Submitted for Development</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports for Course Revisions</p>
-            </div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="nov">
-            <div class="month">
-            <h2>November</h2>
-            <div class="spring">
-                <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
-            </div>
-            <div class="fall"></div>
-            <div class="summer"></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4" id="dec">
-            <div class="month">
-            <h2>December</h2>
-            <div class="spring">
-                <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
-                <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
-                <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% of Media Submitted for Development</p>
-                <p data-toggle="modal" data-target="#qcComplete">Quality Check Process Completed</p>
-                <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
-            </div>
-            <div class="fall">
-                <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
-            </div>
-            <div class="generalDev">
-                <p data-toggle="modal" data-target="#revisionsSet">Revisions Set</p>
-            </div>
-            
-            <div class="summer"></div>
-            </div>
-        </div>
-        </div>
-            <!--Modal content below this-->
-            <!--Spring Course Live-->
-            <div class="modal fade" id="springCourseLive" tabindex="-1" role="dialog" aria-labelledby="springCourseLiveLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="springCourseLiveLabel">Spring Course Live</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>100% of the course is finished by the day the course opens (Preview Week).</p>
-                        </div>
+        <!--This section contains all of the months and the items on each month-->
+        <div id="year" class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="0month">
+                <div class="month">
+                    <h2>January</h2>
+                    <div class="spring">
+                        <p class="deadline" data-toggle="modal" data-target="#springCourseLive">Spring - Course Live</p>
                     </div>
-                </div> 
-            </div>
-            <!--Plan Faculty Retreat-->
-            <div class="modal fade" id="planRetreat" tabindex="-1" role="dialog" aria-labelledby="planRetreatLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="planRetreatLabel">Start Planning Faculty Retreat</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Propose a mandatory kick-off meeting with Program Managers, ID, & Media. This is usually the Program Manager's responsibility.</p>
-                            <p>Program managers have leveraged <a href="http://doodle.com/" target="_blank">Doodle</a> in the past to pick dates for faculty retreats.</p>
-                        </div>
+                    <div class="fall">
+                        <p class="cycleStart">Fall Cycle Begins</p>
+                        <p data-toggle="modal" data-target="#schedConsult">Schedule Consultations</p>
+                        <p data-toggle="modal" data-target="#requestShells">Request Course Shells</p>
+                        <p data-toggle="modal" data-target="#instructorAccounts">Create Instructor Accounts</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--Generate Media Reports for Course Revisions-->
-            <div class="modal fade" id="mediaReports" tabindex="-1" role="dialog" aria-labelledby="mediaReportsLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="mediaReportsLabel">Generate Media Reports for Course Revisions</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>A media report will be generated for courses up for revision the following fiscal year.  A media report is a comprehensive evaluation of media components currently being leveraged in a specific course.  The types of information you can expect to find in a media report include, but are not limited to, current media player versions, audio quality, appearance, readability, transcripts, and captions.</p>
-                            <p>This report provides media and instructional design with a clear plan for upgrading media components (where applicable) if media components are reused in a revised course.</p>
-                            <p>Assets: <a href="https://docs.google.com/spreadsheets/d/11imuxFE1xlk30JvOrJayTJYZ-H7-Wqmemx73zWoesQc/edit#gid=0" target="_blank">Working example</a> and <a href="https://drive.google.com/drive/#folders/0B2SP_CwSPnapMld5N3JpWUlVMWc" target="_blank">Media Report - Template</a></p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="1month">
+                <div class="month" >
+                    <h2>February</h2>
+                    <div class="generalDev">
+                        <p data-toggle="modal" data-target="#planRetreat">Plan Faculty Retreat</p>
                     </div>
-                </div> 
-            </div>
-            <!--1:1 Consultations-->
-            <div class="modal fade" id="schedConsult" tabindex="-1" role="dialog" aria-labelledby="schedConsultLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="schedConsultLabel">Prepare for and Schedule 1:1 Consultations</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Begin research and gathering information to prepare for the 1:1 Consultation.</p>
-                            <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Pre-Development" target="_blank">Instructional Design Wiki (Pre-Development)</a></p>
-                        </div>
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
+                        <p data-toggle="modal" data-target="#idTech">Identify Tech Requirements</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--Request Course Shells-->
-            <div class="modal fade" id="requestShells" tabindex="-1" role="dialog" aria-labelledby="requestShellsLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="requestShellsLabel">Request New Development/Revision Course Shells</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Request all course shells for maintenance, revision, and new developments by this time.</p>
-                            <p>One request for all the shells in a given program is ideal.</p>
-                            <p>Resource: SCML? What's the process here?</p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="2month">
+                <div class="month">
+                    <h2>March</h2>
+                    <div class="generalDev"></div>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports</p>
                     </div>
-                </div> 
-            </div>
-            <!--Create New Instructor Accounts-->
-            <div class="modal fade" id="instructorAccounts" tabindex="-1" role="dialog" aria-labelledby="instructorAccountsLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="instructorAccountsLabel">Create New Instructor Accounts for D2L</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Something goes here?</p>
-                        </div>
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#techDiscuss">Discuss Tech Requirements</p>
+                        <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
+                        <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media</p>
+                        <p data-toggle="modal" data-target="#initDesignComplete">Initial Design Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbooks Selected</p>
                     </div>
-                </div> 
-            </div>
-            <!--Faculty Retreat-->
-            <div class="modal fade" id="facultyRetreat" tabindex="-1" role="dialog" aria-labelledby="facultyRetreatLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="facultyRetreatLabel">Faculty Retreat</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Faculty get face time with other faculty, instructional design, media, the program manager, student services, and possibly other team members at this program-manager led meeting.</p>
-                            <p>This is a good time for instructional designers and media to have informal, face-to-face meetings (especially with new faculty).</p>
-                        </div>
+                    <div class="summer"></div>
                     </div>
-                </div> 
             </div>
-            <!--Start 1:1 Consulting-->
-            <div class="modal fade" id="startConsult" tabindex="-1" role="dialog" aria-labelledby="startConsultLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="startConsultLabel">Start 1:1 Consulting</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>One-on-one consultation between instructional designer and faculty member begins at the faculty retreat.</p>
-                            <p>Depending on the time available at the retreat, this may be a more comprehensive consultation meeting or an informal, relationship-building conversation that leads to scheduling the comprehensive consultation meeting.</p>
-                            <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Pre-Development" target="_blank">Instructional Design Wiki (Pre-Development)</a></p> 
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="3month">
+                <div class="month">
+                    <h2>April</h2>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#schedConsult">Schedule Consultations</p>
+                        <p data-toggle="modal" data-target="#requestShells">Request Course Shells</p>
+                        <p data-toggle="modal" data-target="#instructorAccounts">Create Instructor Accounts</p>
                     </div>
-                </div> 
-            </div>
-            <!--Identify Technology Requirements-->
-            <div class="modal fade" id="idTech" tabindex="-1" role="dialog" aria-labelledby="idTechLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="idTechLabel">Identify Technology Requirements</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>ID identifies any technology needs for course development based on meeting with the instructor. This includes any new technologies to potentially incorporate into courses.</p>
-                            <p>ID then communicates these needs to IT. (Improved process forthcoming.)</p>
-                        </div>
+                    <div class="fall">
+                        <p>Course Shells Created</p>
+                        <p data-toggle="modal" data-target="#mediaPlan">Establish Media Plan</p>
+                        <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
+                        <p data-toggle="modal" data-target="#mediaTestSubmit">Media Test Submitted</p>
+                        <p data-toggle="modal" data-target="#mediaTestResponse">Media Test Response</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--End of Semester Tasks-->
-            <div class="modal fade" id="endSemester" tabindex="-1" role="dialog" aria-labelledby="endSemesterLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="endSemesterLabel">End of Semester Tasks</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Most programs commonly have ID tasks such as collecting eGrades and implementing end-of-course evaluations.</p>
-                            <p>Resource: </p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="4month">
+                <div class="month">
+                    <h2>May</h2>
+                    <div class="generalDev">
+                        <p data-toggle="modal" data-target="#facultyRetreat">Faculty Retreat</p>   
                     </div>
-                </div> 
-            </div>
-            <!--Discuss Technology Requirements-->
-            <div class="modal fade" id="techDiscuss" tabindex="-1" role="dialog" aria-labelledby="techDiscussLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="techDiscussLabel">Discuss Technology Requirements</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>IT, ID, & Media may need to meet and discuss any technologies that will be used for courses based on the requirements defined in May, including new technologies to develop or integrate.</p>
-                        </div>
+                    <div class="spring">
+                        <p class="cycleStart">Spring Cycle Begins</p>
                     </div>
-                </div> 
-            </div>
-            <!--Course Structure Finalized-->
-            <div class="modal fade" id="courseStrucFinal" tabindex="-1" role="dialog" aria-labelledby="courseStrucFinalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="courseStrucFinalLabel">Course Structure Finalized</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>The course outline or course structure should be finalized by this date. At the very least, this includes a list of lessons or topics to be covered.</p>
-                            <p>If not completed, this is a potential flag for the Program Manager.</p>
-                            <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Course_Outline" target="_blank">Example of Course Structure</a></p>
-                        </div>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
+                        <p data-toggle="modal" data-target="#idTech">Identify Tech Requirements</p>
+                        <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
                     </div>
-                </div> 
-            </div>
-            <!--ID Briefs Media on Courses-->
-            <div class="modal fade" id="idBriefsMedia" tabindex="-1" role="dialog" aria-labelledby="idBriefsMediaLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="idBriefsMediaLabel">ID Briefs Media on Courses</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>ID notifies media of the number and type of media for each new or revised course, and consults with media about any unknowns and schedules media plan consultation with faculty if needed (see September).</p>
-                        </div>
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% Media Submitted</p>
                     </div>
-                </div> 
-            </div>
-            <!--Initial Course Design Complete and Development Begins-->
-            <div class="modal fade" id="initDesignComplete" tabindex="-1" role="dialog" aria-labelledby="initDesignCompleteLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="initDesignCompleteLabel">Initial Course Design Complete and Development Begins</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>This is the ID and instructor's plan for the course. This is a pre-requisite to begin development of the course. The ID has completed a consultation (or needs assessment) and has worked together with the instructor to identify the different components of the course and pedagogical strategies to drive development.</p>
-                            <p>For an example of components commonly found in a course: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Development" target="_blank">Instructional Design Wiki (Development)</a>
-                        </div>
+                    <div class="summer">
+                        <p class="deadline">Summer - Course Live</p>
                     </div>
                 </div>
             </div>
-            <!--Textbook(s) Selected (if any)-->
-            <div class="modal fade" id="textbookSelect" tabindex="-1" role="dialog" aria-labelledby="textbookSelectLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="textbookSelectLabel">Textbook(s) Selected (if any)</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>If the instructor is using a required textbook or course reader, that information should be submitted to the ID by this time.</p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="5month">
+                <div class="month">
+                    <h2>June</h2>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#techDiscuss">Discuss Tech Requirements</p>
                     </div>
-                </div> 
-            </div>
-            <!--Fall Term - Course Live-->
-            <div class="modal fade" id="fallCourseLive" tabindex="-1" role="dialog" aria-labelledby="fallCourseLiveLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="fallCourseLiveLabel">Fall Term - Course Live</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>100% of the course is finished by the day the course opens (Preview Week).</p>
-                        </div>
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--Consultation to Establish Media Plan-->
-            <div class="modal fade" id="mediaPlan" tabindex="-1" role="dialog" aria-labelledby="mediaPlan" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="mediaPlanLabel">Consultation to Establish Media Plan</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>ID schedules a phone conference with the instructor and the lead media specialist.  The objective of the meeting is to share ideas about media usage and finalize production details and schedules.</p>
-                            <p>The media specialist should have enough information to accurately fill out the <a href="https://docs.google.com/spreadsheet/ccc?key=0AmSP_CwSPnapdFFxTmZxYkdTLXFjaVRGZXpwSjlrb2c&usp=drive_web#gid=94" target="_blank">media plan</a> for the course following the meeting.</p>
-                            <p>Resource: Work on developing a document to capture information.</p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="6month">
+                <div class="month">
+                    <h2>July</h2>
+                    <div class="spring">
+                        <p>Course Shells Created</p>
                     </div>
-                </div> 
-            </div>
-            <!--Media Consultation-->
-            <div class="modal fade" id="mediaConsultation" tabindex="-1" role="dialog" aria-labelledby="mediaConsultationLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="mediaConsultationLabel">Media Consultation</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>The lead media specialist schedules an Adobe Connect web conference with the instructor to discuss media development procedures.  Examples may include, but are not limited to, recording audio in PowerPoint or other presentation applications, configuring screencast software for lecture recordings, and/or planning video shoots.</p>
-                            <p>One of the main objectives of this web conference is to encourage the instructor to create a media test file and submit it via our media uploader web application.  Upon submission, a media specialist will review the test file and provide feedback to the instructor.</p>
-                            <p>Resource: Adobe Connect Account</p>
-                        </div>
+                    <div class="fall">
+                        <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#qcComplete">Quality Check Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--First Media Sample/Test Submitted-->
-            <div class="modal fade" id="mediaTestSubmit" tabindex="-1" role="dialog" aria-labelledby="mediaTestSubmitLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="mediaTestSubmitLabel">First Media Sample/Test Submitted</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Following the Media Consultation, the instructor will develop and submit a sample media file for review.  It is the responsibility of the lead media specialist to perform a quality assurance check on the submission to ensure it meets our standards.</p>
-                            <p>NOTE: ID will need to inform media when the file is ready for review since they receive alert notifications from the media uploader web application. </p>
-                            <p>Resource: <a href="" target="_blank">Media Upload Site</a> Password is <em>Password will be added here</em></p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months"  id="7month">
+                <div class="month">
+                    <h2>August</h2>
+                    <div class="spring">
+                        <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
+                        <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media</p>
+                        <p data-toggle="modal" data-target="#initDesignComplete">Initial Design Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbooks Selected</p>
                     </div>
-                </div> 
-            </div>
-            <!--Media Sample/Test Response-->
-            <div class="modal fade" id="mediaTestResponse" tabindex="-1" role="dialog" aria-labelledby="mediaTestResponseLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="mediaTestResponseLabel">Media Sample/Test Response</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>The media specialist will follow up with the instructor regarding the media test file they submitted.  If the media quality (audio, visuals, output, etc.) meets our standards, the instructor will be granted the go-ahead to begin media production for their respective course.  If problems exist, the media specialist will schedule a follow-up media consultation to troubleshoot issues.  This process will continue until a high-quality product is delivered. </p>
-                            <p>NOTE: Performing multiple media consultations is a rare situation, and to date we have never performed more than three for any one instructor.</p>
-                        </div>
+                    <div class="fall">
+                    <p class="deadline" data-toggle="modal" data-target="#fallCourseLive">Fall - Course Live</p>
                     </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--50% of Media Submitted for Development-->
-            <div class="modal fade" id="media50Percent" tabindex="-1" role="dialog" aria-labelledby="media50PercentLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="media50PercentLabel">50% of Media Submitted for Development</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>This date signifies that media for half of the course has been submitted by the instructor to the instructional designer using the media uploader web application. </p>
-                            <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the <strong>Video Production Complete</strong> calendar event.</p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="8month">
+                <div class="month">
+                    <h2>September</h2>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#mediaPlan">Establish Media Plan</p>
+                        <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
+                        <p data-toggle="modal" data-target="#mediaTestSubmit">Media Test Submitted</p>
+                        <p data-toggle="modal" data-target="#mediaTestResponse">Media Test Response</p>
                     </div>
-                </div> 
+                    <div class="fall"></div>
+                    <div class="summer"></div>
+                </div>
             </div>
-            <!--Course Maintenance-->
-            <div class="modal fade" id="courseMaintenance" tabindex="-1" role="dialog" aria-labelledby="courseMaintenanceLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="courseMaintenanceLabel">Course Maintenance</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>ID begins the course maintenance process by contacting instructors, copying over courses into the spring course shells, and updating maintenance courses.</p>
-                            <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Maintenance" target="_blank">Instructional Design Wiki (Maintenance and Revision)</a></p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="9month">
+                <div class="month">
+                    <h2>October</h2>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% Media Submitted</p>
                     </div>
-                </div> 
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports</p>
+                    </div>
+                    <div class="summer"></div>
+                </div>
             </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="10month">
+                <div class="month">
+                    <h2>November</h2>
+                    <div class="spring">
+                        <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
+                    </div>
+                    <div class="fall"></div>
+                    <div class="summer"></div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 months" id="11month">
+                <div class="month">
+                    <h2>December</h2>
+                    <div class="spring">
+                        <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#qcComplete">Quality Check Complete</p>
+                        <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
+                    </div>
+                    <div class="fall">
+                        <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
+                    </div>
+                    <div class="generalDev">
+                        <p data-toggle="modal" data-target="#revisionsSet">Revisions Set</p>
+                    </div>
 
-            <!--Video Production Complete-->
-            <div class="modal fade" id="videoComplete" tabindex="-1" role="dialog" aria-labelledby="videoCompleteLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="videoCompleteLabel">Video Production Complete</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Following the media plan being set, a media specialist will partner with the instructor and instructional design to create any videos that are a part of that plan. A media specialist will have the instructor review the video planning tip sheet, fill out the media team video shoot requirements form, and provide an outline or script. Once these steps have been completed by the instructor then the media specialist will schedule a date and time for their video shoot.</p>
-                            <p>Prior to the video shoot, the media specialist will determine what equipment is needed and how many media team members should attend the shoot based upon the information provided by the instructor. The media specialist will also call the instructor the week of their shoot prior to the actual day to touch base one final time and go over any last minute concerns or details. The day before the shoot the media specialist will prepare the equipment for the shoot. After video shoot has occurred, the media specialist will back up all footage to the media server prior to editing.</p>
-                            <p>NOTE: Media will not schedule a video shoot until an instructor fills out the media team video shoot requirements and provides an outline or script.</p>
-                            <p>Resources: <a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dFhWN1VRdVZNTWV1T0F6SGF6elExR2c6MQ#gid=0" target="_blank">Media Team Video Shoot Requirements</a> and <a href="https://docs.google.com/document/d/1hF-UeSoFOriCQZap4CmFDPHzVG9lGb0vIXSH3PqKkF8/edit" target="_blank">video planning tip sheet</a>.</p>
-                        </div>
-                    </div>
-                </div> 
+                    <div class="summer"></div>
+                </div>
             </div>
+        </div>
+        <!--Modal content below this-->
+        <!--Spring Course Live-->
+        <div class="modal fade" id="springCourseLive" tabindex="-1" role="dialog" aria-labelledby="springCourseLiveLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="springCourseLiveLabel">Spring Course Live</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>100% of the course is finished by the day the course opens (Preview Week).</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Plan Faculty Retreat-->
+        <div class="modal fade" id="planRetreat" tabindex="-1" role="dialog" aria-labelledby="planRetreatLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="planRetreatLabel">Start Planning Faculty Retreat</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Propose a mandatory kick-off meeting with Program Managers, ID, & Media. This is usually the Program Manager's responsibility.</p>
+                        <p>Program managers have leveraged <a href="http://doodle.com/" target="_blank">Doodle</a> in the past to pick dates for faculty retreats.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Generate Media Reports for Course Revisions-->
+        <div class="modal fade" id="mediaReports" tabindex="-1" role="dialog" aria-labelledby="mediaReportsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mediaReportsLabel">Generate Media Reports for Course Revisions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>A media report will be generated for courses up for revision the following fiscal year.  A media report is a comprehensive evaluation of media components currently being leveraged in a specific course.  The types of information you can expect to find in a media report include, but are not limited to, current media player versions, audio quality, appearance, readability, transcripts, and captions.</p>
+                        <p>This report provides media and instructional design with a clear plan for upgrading media components (where applicable) if media components are reused in a revised course.</p>
+                        <p>Assets: <a href="https://docs.google.com/spreadsheets/d/11imuxFE1xlk30JvOrJayTJYZ-H7-Wqmemx73zWoesQc/edit#gid=0" target="_blank">Working example</a> and <a href="https://drive.google.com/drive/#folders/0B2SP_CwSPnapMld5N3JpWUlVMWc" target="_blank">Media Report - Template</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--1:1 Consultations-->
+        <div class="modal fade" id="schedConsult" tabindex="-1" role="dialog" aria-labelledby="schedConsultLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="schedConsultLabel">Prepare for and Schedule 1:1 Consultations</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Begin research and gathering information to prepare for the 1:1 Consultation.</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Pre-Development" target="_blank">Instructional Design Wiki (Pre-Development)</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Request Course Shells-->
+        <div class="modal fade" id="requestShells" tabindex="-1" role="dialog" aria-labelledby="requestShellsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="requestShellsLabel">Request New Development/Revision Course Shells</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Request all course shells for maintenance, revision, and new developments by this time.</p>
+                        <p>One request for all the shells in a given program is ideal.</p>
+                        <p>Resource: SCML? What's the process here?</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Create New Instructor Accounts-->
+        <div class="modal fade" id="instructorAccounts" tabindex="-1" role="dialog" aria-labelledby="instructorAccountsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="instructorAccountsLabel">Create New Instructor Accounts for D2L</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Something goes here?</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Faculty Retreat-->
+        <div class="modal fade" id="facultyRetreat" tabindex="-1" role="dialog" aria-labelledby="facultyRetreatLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="facultyRetreatLabel">Faculty Retreat</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Faculty get face time with other faculty, instructional design, media, the program manager, student services, and possibly other team members at this program-manager led meeting.</p>
+                        <p>This is a good time for instructional designers and media to have informal, face-to-face meetings (especially with new faculty).</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Start 1:1 Consulting-->
+        <div class="modal fade" id="startConsult" tabindex="-1" role="dialog" aria-labelledby="startConsultLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="startConsultLabel">Start 1:1 Consulting</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One-on-one consultation between instructional designer and faculty member begins at the faculty retreat.</p>
+                        <p>Depending on the time available at the retreat, this may be a more comprehensive consultation meeting or an informal, relationship-building conversation that leads to scheduling the comprehensive consultation meeting.</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Pre-Development" target="_blank">Instructional Design Wiki (Pre-Development)</a></p> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Identify Technology Requirements-->
+        <div class="modal fade" id="idTech" tabindex="-1" role="dialog" aria-labelledby="idTechLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="idTechLabel">Identify Technology Requirements</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>ID identifies any technology needs for course development based on meeting with the instructor. This includes any new technologies to potentially incorporate into courses.</p>
+                        <p>ID then communicates these needs to IT. (Improved process forthcoming.)</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--End of Semester Tasks-->
+        <div class="modal fade" id="endSemester" tabindex="-1" role="dialog" aria-labelledby="endSemesterLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="endSemesterLabel">End of Semester Tasks</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Most programs commonly have ID tasks such as collecting eGrades and implementing end-of-course evaluations.</p>
+                        <p>Resource: </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Discuss Technology Requirements-->
+        <div class="modal fade" id="techDiscuss" tabindex="-1" role="dialog" aria-labelledby="techDiscussLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="techDiscussLabel">Discuss Technology Requirements</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>IT, ID, & Media may need to meet and discuss any technologies that will be used for courses based on the requirements defined in May, including new technologies to develop or integrate.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Course Structure Finalized-->
+        <div class="modal fade" id="courseStrucFinal" tabindex="-1" role="dialog" aria-labelledby="courseStrucFinalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="courseStrucFinalLabel">Course Structure Finalized</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The course outline or course structure should be finalized by this date. At the very least, this includes a list of lessons or topics to be covered.</p>
+                        <p>If not completed, this is a potential flag for the Program Manager.</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Course_Outline" target="_blank">Example of Course Structure</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--ID Briefs Media on Courses-->
+        <div class="modal fade" id="idBriefsMedia" tabindex="-1" role="dialog" aria-labelledby="idBriefsMediaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="idBriefsMediaLabel">ID Briefs Media on Courses</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>ID notifies media of the number and type of media for each new or revised course, and consults with media about any unknowns and schedules media plan consultation with faculty if needed (see September).</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Initial Course Design Complete and Development Begins-->
+        <div class="modal fade" id="initDesignComplete" tabindex="-1" role="dialog" aria-labelledby="initDesignCompleteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="initDesignCompleteLabel">Initial Course Design Complete and Development Begins</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is the ID and instructor's plan for the course. This is a pre-requisite to begin development of the course. The ID has completed a consultation (or needs assessment) and has worked together with the instructor to identify the different components of the course and pedagogical strategies to drive development.</p>
+                        <p>For an example of components commonly found in a course: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Development" target="_blank">Instructional Design Wiki (Development)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Textbook(s) Selected (if any)-->
+        <div class="modal fade" id="textbookSelect" tabindex="-1" role="dialog" aria-labelledby="textbookSelectLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="textbookSelectLabel">Textbook(s) Selected (if any)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>If the instructor is using a required textbook or course reader, that information should be submitted to the ID by this time.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Fall Term - Course Live-->
+        <div class="modal fade" id="fallCourseLive" tabindex="-1" role="dialog" aria-labelledby="fallCourseLiveLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="fallCourseLiveLabel">Fall Term - Course Live</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>100% of the course is finished by the day the course opens (Preview Week).</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Consultation to Establish Media Plan-->
+        <div class="modal fade" id="mediaPlan" tabindex="-1" role="dialog" aria-labelledby="mediaPlan" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mediaPlanLabel">Consultation to Establish Media Plan</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>ID schedules a phone conference with the instructor and the lead media specialist.  The objective of the meeting is to share ideas about media usage and finalize production details and schedules.</p>
+                        <p>The media specialist should have enough information to accurately fill out the <a href="https://docs.google.com/spreadsheet/ccc?key=0AmSP_CwSPnapdFFxTmZxYkdTLXFjaVRGZXpwSjlrb2c&usp=drive_web#gid=94" target="_blank">media plan</a> for the course following the meeting.</p>
+                        <p>Resource: Work on developing a document to capture information.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Media Consultation-->
+        <div class="modal fade" id="mediaConsultation" tabindex="-1" role="dialog" aria-labelledby="mediaConsultationLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mediaConsultationLabel">Media Consultation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The lead media specialist schedules an Adobe Connect web conference with the instructor to discuss media development procedures.  Examples may include, but are not limited to, recording audio in PowerPoint or other presentation applications, configuring screencast software for lecture recordings, and/or planning video shoots.</p>
+                        <p>One of the main objectives of this web conference is to encourage the instructor to create a media test file and submit it via our media uploader web application.  Upon submission, a media specialist will review the test file and provide feedback to the instructor.</p>
+                        <p>Resource: Adobe Connect Account</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--First Media Sample/Test Submitted-->
+        <div class="modal fade" id="mediaTestSubmit" tabindex="-1" role="dialog" aria-labelledby="mediaTestSubmitLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mediaTestSubmitLabel">First Media Sample/Test Submitted</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Following the Media Consultation, the instructor will develop and submit a sample media file for review.  It is the responsibility of the lead media specialist to perform a quality assurance check on the submission to ensure it meets our standards.</p>
+                        <p>NOTE: ID will need to inform media when the file is ready for review since they receive alert notifications from the media uploader web application. </p>
+                        <p>Resource: <a href="" target="_blank">Media Upload Site</a> Password is <em>Password will be added here</em></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Media Sample/Test Response-->
+        <div class="modal fade" id="mediaTestResponse" tabindex="-1" role="dialog" aria-labelledby="mediaTestResponseLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mediaTestResponseLabel">Media Sample/Test Response</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The media specialist will follow up with the instructor regarding the media test file they submitted.  If the media quality (audio, visuals, output, etc.) meets our standards, the instructor will be granted the go-ahead to begin media production for their respective course.  If problems exist, the media specialist will schedule a follow-up media consultation to troubleshoot issues.  This process will continue until a high-quality product is delivered. </p>
+                        <p>NOTE: Performing multiple media consultations is a rare situation, and to date we have never performed more than three for any one instructor.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--50% of Media Submitted for Development-->
+        <div class="modal fade" id="media50Percent" tabindex="-1" role="dialog" aria-labelledby="media50PercentLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="media50PercentLabel">50% of Media Submitted for Development</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This date signifies that media for half of the course has been submitted by the instructor to the instructional designer using the media uploader web application. </p>
+                        <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the <strong>Video Production Complete</strong> calendar event.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Course Maintenance-->
+        <div class="modal fade" id="courseMaintenance" tabindex="-1" role="dialog" aria-labelledby="courseMaintenanceLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="courseMaintenanceLabel">Course Maintenance</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>ID begins the course maintenance process by contacting instructors, copying over courses into the spring course shells, and updating maintenance courses.</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Maintenance" target="_blank">Instructional Design Wiki (Maintenance and Revision)</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <!--Course Development Complete-->
-            <div class="modal fade" id="courseDevComplete" tabindex="-1" role="dialog" aria-labelledby="courseDevCompleteLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="courseDevCompleteLabel">Course Development Complete</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>All course development is complete for the Spring Term.</p>
-                        </div>
+        <!--Video Production Complete-->
+        <div class="modal fade" id="videoComplete" tabindex="-1" role="dialog" aria-labelledby="videoCompleteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="videoCompleteLabel">Video Production Complete</h4>
                     </div>
-                </div> 
-            </div>
+                    <div class="modal-body">
+                        <p>Following the media plan being set, a media specialist will partner with the instructor and instructional design to create any videos that are a part of that plan. A media specialist will have the instructor review the video planning tip sheet, fill out the media team video shoot requirements form, and provide an outline or script. Once these steps have been completed by the instructor then the media specialist will schedule a date and time for their video shoot.</p>
+                        <p>Prior to the video shoot, the media specialist will determine what equipment is needed and how many media team members should attend the shoot based upon the information provided by the instructor. The media specialist will also call the instructor the week of their shoot prior to the actual day to touch base one final time and go over any last minute concerns or details. The day before the shoot the media specialist will prepare the equipment for the shoot. After video shoot has occurred, the media specialist will back up all footage to the media server prior to editing.</p>
+                        <p>NOTE: Media will not schedule a video shoot until an instructor fills out the media team video shoot requirements and provides an outline or script.</p>
+                        <p>Resources: <a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dFhWN1VRdVZNTWV1T0F6SGF6elExR2c6MQ#gid=0" target="_blank">Media Team Video Shoot Requirements</a> and <a href="https://docs.google.com/document/d/1hF-UeSoFOriCQZap4CmFDPHzVG9lGb0vIXSH3PqKkF8/edit" target="_blank">video planning tip sheet</a>.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <!--100% of Media Submitted for Development-->
-            <div class="modal fade" id="media100Percent" tabindex="-1" role="dialog" aria-labelledby="media100PercentLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="media100PercentLabel">100% of Media Submitted for Development</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>This date signifies that media for the entire course has been submitted by the instructor to the instructional designer using the media uploader web application.</p>
-                            <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the Video Production Complete calendar event.</p>
-                        </div>
+        <!--Course Development Complete-->
+        <div class="modal fade" id="courseDevComplete" tabindex="-1" role="dialog" aria-labelledby="courseDevCompleteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="courseDevCompleteLabel">Course Development Complete</h4>
                     </div>
-                </div> 
-            </div>
+                    <div class="modal-body">
+                        <p>All course development is complete for the Spring Term.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <!--Revisions Set-->
-            <div class="modal fade" id="revisionsSet" tabindex="-1" role="dialog" aria-labelledby="revisionsSetLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="revisionsSetLabel">Revisions Set</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>At this time the annual budget has been fixed, so we know what revisions will be performed this year.</p>
-                        </div>
+        <!--100% of Media Submitted for Development-->
+        <div class="modal fade" id="media100Percent" tabindex="-1" role="dialog" aria-labelledby="media100PercentLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="media100PercentLabel">100% of Media Submitted for Development</h4>
                     </div>
-                </div> 
-            </div>
+                    <div class="modal-body">
+                        <p>This date signifies that media for the entire course has been submitted by the instructor to the instructional designer using the media uploader web application.</p>
+                        <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the Video Production Complete calendar event.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <!--Quality Check Process Completed-->
-            <div class="modal fade" id="qcComplete" tabindex="-1" role="dialog" aria-labelledby="qcCompleteLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="qcCompleteLabel">Quality Check Process Completed</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Something goes here?</p>
-                            <p>Resource: QA Checklist?</p>
-                        </div>
+        <!--Revisions Set-->
+        <div class="modal fade" id="revisionsSet" tabindex="-1" role="dialog" aria-labelledby="revisionsSetLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="revisionsSetLabel">Revisions Set</h4>
                     </div>
-                </div> 
-            </div>
+                    <div class="modal-body">
+                        <p>At this time the annual budget has been fixed, so we know what revisions will be performed this year.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <!--Faculty Sign Off-->
-            <div class="modal fade" id="facultySignOff" tabindex="-1" role="dialog" aria-labelledby="facultySignOffLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="facultySignOffLabel">Faculty Sign Off</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Something goes here?</p>
-                        </div>
+        <!--Quality Check Process Completed-->
+        <div class="modal fade" id="qcComplete" tabindex="-1" role="dialog" aria-labelledby="qcCompleteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="qcCompleteLabel">Quality Check Process Completed</h4>
                     </div>
-                </div> 
-            </div>
+                    <div class="modal-body">
+                        <p>Something goes here?</p>
+                        <p>Resource: QA Checklist?</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!--Faculty Sign Off-->
+        <div class="modal fade" id="facultySignOff" tabindex="-1" role="dialog" aria-labelledby="facultySignOffLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="facultySignOffLabel">Faculty Sign Off</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Something goes here?</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
         </div>
     </body>
