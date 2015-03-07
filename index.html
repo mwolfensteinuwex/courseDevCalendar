@@ -19,17 +19,43 @@ and open the template in the editor.
         <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12" id="devNotes">
-                <p><em>Dev Notes: All items should now be clickable.</em></p>
+                <p><em>Dev Notes: Summer has been added. It breaks things.</em></p>
             </div>
-            <!--This is all top of the page content, it includes the title and the buttons to select terms-->
-            <div class="col-lg-8 col-md-8 col-sm-12">
+            <!--This is all top of the page content, it includes the title, buttons to select terms, and checkboxes for roles-->
+            <div class="col-lg-8 col-md-9 col-sm-12">
                 <h1>Course Development Timeline <span class="spring">(Spring Term)</span><span class="fall">(Fall Term)</span><span class="summer">(Summer Term)</span></h1>
             </div>
-            <div id="termSelect" class="col-lg-4 col-md-4 col-sm-12">
+            <div id="termSelect" class="col-lg-4 col-md-3 col-sm-6">
                 <button class="btn btn-default" type="submit" id="allSelect"><strong>All</strong></button>
                 <button class="btn btn-default" type="submit" id="fallSelect"><strong>Fall</strong></button>            
                 <button class="btn btn-default" type="submit" id="springSelect"><strong>Spring</strong></button>
                 <button class="btn btn-default" type="submit" id="summerSelect"><strong>Summer</strong></button>
+            </div>
+            <div id="roleSelectHolder" class="col-lg-4 col-lg-offset-8 col-md-3 col-md-offset-9 col-sm-6">
+                <form id="roleSelect">
+                    <div class="form-inline">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" id="allTasks" name="role" checked> All
+                                </label>
+                            </div>
+                            <div class="radio">
+                               <label>
+                                   <input type="radio" id="idTasks" name="role"> ID
+                               </label> 
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" id="mediaTasks" name="role"> Media
+                                </label>
+                            </div>
+                            <div class="radio">
+                               <label>
+                                   <input type="radio" id="itTasks" name="role"> IT
+                               </label> 
+                            </div>
+                    </div>
+                </form>
             </div>
         </div>
         <!--This section contains all of the months and the items on each month-->
@@ -37,81 +63,110 @@ and open the template in the editor.
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>January</h2>
+                    <div class="fall">
+                        <p class="cycleStart">Fall Cycle Begins</p>
+                    </div>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#schedConsult" class="idTask">Schedule Consultations</p>
+                        <p data-toggle="modal" data-target="#requestShells" class="idTask itTask">Request Course Shells</p>
+                        <p data-toggle="modal" data-target="#instructorAccounts" class=" itTask">Create Instructor Accounts</p>
+                    </div>
+                    <div class="summer tasks">
+                        <p data-toggle="modal" data-target="#startConsult" class="idTask">Start 1:1 Consulting</p>
+                        <p data-toggle="modal" data-target="#idTech" class="idTask itTask mediaTask">Identify Tech Requirements</p>
+                        <p data-toggle="modal" data-target="#techDiscuss" class="idTask itTask mediaTask">Discuss Tech Requirements</p>
+                        <p data-toggle="modal" data-target="#courseStrucFinal" class="idTask itTask mediaTask deadline">Course Structure Finalized</p>
+                        <p data-toggle="modal" data-target="#idBriefsMedia" class="idTask mediaTask">ID Briefs Media</p>
+                        <p data-toggle="modal" data-target="#initDesignComplete" class="idTask">Initial Design Complete</p>
+                        <p data-toggle="modal" data-target="#textbookSelect" class="idTask deadline">Textbooks Selected</p>
+                        
+                    </div>
                     <div class="spring">
                         <p class="deadline" data-toggle="modal" data-target="#springCourseLive">Spring - Course Live</p>
                     </div>
-                    <div class="fall">
-                        <p class="cycleStart">Fall Cycle Begins</p>
-                        <p data-toggle="modal" data-target="#schedConsult">Schedule Consultations</p>
-                        <p data-toggle="modal" data-target="#requestShells">Request Course Shells</p>
-                        <p data-toggle="modal" data-target="#instructorAccounts">Create Instructor Accounts</p>
-                    </div>
-                    <div class="summer"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month" >
                     <h2>February</h2>
-                    <div class="generalDev">
-                        <p data-toggle="modal" data-target="#planRetreat">Plan Faculty Retreat</p>
+                    <div class="generalDev tasks">
+                        <p data-toggle="modal" data-target="#planRetreat"  class="idTask mediaTask">Plan Faculty Retreat</p>
                     </div>
-                    <div class="fall">
-                        <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
-                        <p data-toggle="modal" data-target="#idTech">Identify Tech Requirements</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#startConsult" class="idTask">Start 1:1 Consulting</p>
+                        <p data-toggle="modal" data-target="#idTech" class="idTask itTask mediaTask">Identify Tech Requirements</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks">
+                        <p class="itTask">Course Shells Created</p>
+                        <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
+                        <p data-toggle="modal" data-target="#mediaPlan" class="idTask mediaTask">Establish Media Plan</p>
+                        <p data-toggle="modal" data-target="#mediaConsultation" class="mediaTask">Media Consultation</p>
+                        <p data-toggle="modal" data-target="#mediaTestSubmit" class="mediaTask">Media Test Submitted</p>
+                        <p data-toggle="modal" data-target="#mediaTestResponse" class="mediaTask">Media Test Response</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>March</h2>
-                    <div class="generalDev"></div>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports</p>
+                    <div class="generalDev tasks"></div>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#mediaReports" class="idTask mediaTask">Generate Media Reports</p>
                     </div>
-                    <div class="fall">
-                        <p data-toggle="modal" data-target="#techDiscuss">Discuss Tech Requirements</p>
-                        <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
-                        <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media</p>
-                        <p data-toggle="modal" data-target="#initDesignComplete">Initial Design Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbooks Selected</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#techDiscuss" class="idTask itTask mediaTask">Discuss Tech Requirements</p>
+                        <p data-toggle="modal" data-target="#courseStrucFinal" class="idTask deadline">Course Structure Finalized</p>
+                        <p data-toggle="modal" data-target="#idBriefsMedia" class="idTask mediaTask">ID Briefs Media</p>
+                        <p data-toggle="modal" data-target="#initDesignComplete" class="idTask">Initial Design Complete</p>
+                        <p data-toggle="modal" data-target="#textbookSelect" class="itTask deadline">Textbooks Selected</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks">
+                        <p data-toggle="modal" data-target="#media50Percent" class="deadline mediaTask">50% Media Submitted</p>
+                    </div>
                     </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>April</h2>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#schedConsult">Schedule Consultations</p>
-                        <p data-toggle="modal" data-target="#requestShells">Request Course Shells</p>
-                        <p data-toggle="modal" data-target="#instructorAccounts">Create Instructor Accounts</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#schedConsult" class="idTask">Schedule Consultations</p>
+                        <p data-toggle="modal" data-target="#requestShells" class="idTask itTask">Request Course Shells</p>
+                        <p data-toggle="modal" data-target="#instructorAccounts" class="itTask">Create Instructor Accounts</p>
                     </div>
-                    <div class="fall">
-                        <p>Course Shells Created</p>
-                        <p data-toggle="modal" data-target="#mediaPlan">Establish Media Plan</p>
-                        <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
-                        <p data-toggle="modal" data-target="#mediaTestSubmit">Media Test Submitted</p>
-                        <p data-toggle="modal" data-target="#mediaTestResponse">Media Test Response</p>
+                    <div class="fall tasks">
+                        <p  class="itTask">Course Shells Created</p>
+                        <p data-toggle="modal" data-target="#mediaPlan" class="idTask mediaTask">Establish Media Plan</p>
+                        <p data-toggle="modal" data-target="#mediaConsultation" class="mediaTask">Media Consultation</p>
+                        <p data-toggle="modal" data-target="#mediaTestSubmit" class="mediaTask">Media Test Submitted</p>
+                        <p data-toggle="modal" data-target="#mediaTestResponse" class="mediaTask">Media Test Response</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks">
+                        <p data-toggle="modal" data-target="#media100Percent" class="mediaTask deadline">100% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#videoComplete" class="mediaTask deadline">Video Production Complete</p>
+                        <p data-toggle="modal" data-target="#qcComplete" class="idTask">Quality Check Complete</p>
+                        <p data-toggle="modal" data-target="#facultySignOff" class="idTask deadline">Faculty Sign Off</p>
+                        
+                    </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>May</h2>
-                    <div class="generalDev">
-                        <p data-toggle="modal" data-target="#facultyRetreat">Faculty Retreat</p>   
-                    </div>
                     <div class="spring">
                         <p class="cycleStart">Spring Cycle Begins</p>
                     </div>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#startConsult">Start 1:1 Consulting</p>
-                        <p data-toggle="modal" data-target="#idTech">Identify Tech Requirements</p>
-                        <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
+                    <div class="summer tasks">
+                        <p data-toggle="modal" data-target="#courseDevComplete" class="idTask mediaTask deadline">Course Development Complete</p>
                     </div>
-                    <div class="fall">
+                    <div class="generalDev tasks">
+                        <p data-toggle="modal" data-target="#facultyRetreat" class="idTask mediaTask">Faculty Retreat</p>   
+                    </div>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#startConsult" class="idTask">Start 1:1 Consulting</p>
+                        <p data-toggle="modal" data-target="#idTech" class="idTask itTask mediaTask">Identify Tech Requirements</p>
+                        <p data-toggle="modal" data-target="#endSemester" class="idTask">End of Semester Tasks</p>
+                    </div>
+                    <div class="fall tasks">
                         
                     </div>
                     <div class="summer">
@@ -122,100 +177,107 @@ and open the template in the editor.
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>June</h2>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#techDiscuss">Discuss Tech Requirements</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#techDiscuss" class="idTask itTask mediaTask">Discuss Tech Requirements</p>
                     </div>
-                    <div class="fall">
-                        <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% Media Submitted</p>
-                        <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#media50Percent" class="mediaTask deadline">50% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>July</h2>
-                    <div class="spring">
-                        <p>Course Shells Created</p>
+                    <div class="spring tasks">
+                        <p class="itTask">Course Shells Created</p>
                     </div>
-                    <div class="fall">
-                        <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% Media Submitted</p>
-                        <p data-toggle="modal" data-target="#qcComplete">Quality Check Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#videoComplete" class="mediaTask deadline">Video Production Complete</p>
+                        <p data-toggle="modal" data-target="#courseDevComplete" class="idTask deadline">Course Development Complete</p>
+                        <p data-toggle="modal" data-target="#media100Percent" class="mediaTask deadline">100% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#qcComplete" class="idTask">Quality Check Complete</p>
+                        <p data-toggle="modal" data-target="#facultySignOff" class="idTask deadline">Faculty Sign Off</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>August</h2>
-                    <div class="spring">
-                        <p class="deadline" data-toggle="modal" data-target="#courseStrucFinal">Course Structure Finalized</p>
-                        <p data-toggle="modal" data-target="#idBriefsMedia">ID Briefs Media</p>
-                        <p data-toggle="modal" data-target="#initDesignComplete">Initial Design Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#textbookSelect">Textbooks Selected</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#courseStrucFinal" class="idTask deadline">Course Structure Finalized</p>
+                        <p data-toggle="modal" data-target="#idBriefsMedia" class="idTask mediaTask">ID Briefs Media</p>
+                        <p data-toggle="modal" data-target="#initDesignComplete" class="idTask">Initial Design Complete</p>
+                        <p data-toggle="modal" data-target="#textbookSelect" class="idTask deadline">Textbooks Selected</p>
                     </div>
                     <div class="fall">
                     <p class="deadline" data-toggle="modal" data-target="#fallCourseLive">Fall - Course Live</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>September</h2>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#mediaPlan">Establish Media Plan</p>
-                        <p data-toggle="modal" data-target="#mediaConsultation">Media Consultation</p>
-                        <p data-toggle="modal" data-target="#mediaTestSubmit">Media Test Submitted</p>
-                        <p data-toggle="modal" data-target="#mediaTestResponse">Media Test Response</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#mediaPlan" class="mediaTask idTask">Establish Media Plan</p>
+                        <p data-toggle="modal" data-target="#mediaConsultation" class="mediaTask">Media Consultation</p>
+                        <p data-toggle="modal" data-target="#mediaTestSubmit" class="mediaTask">Media Test Submitted</p>
+                        <p data-toggle="modal" data-target="#mediaTestResponse" class="mediaTask">Media Test Response</p>
                     </div>
-                    <div class="fall"></div>
-                    <div class="summer"></div>
+                    <div class="fall tasks"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>October</h2>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#media50Percent" class="deadline">50% Media Submitted</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#media50Percent" class="mediaTask deadline">50% Media Submitted</p>
                     </div>
-                    <div class="fall">
-                        <p data-toggle="modal" data-target="#mediaReports">Generate Media Reports</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#mediaReports" class="mediaTask">Generate Media Reports</p>
                     </div>
-                    <div class="summer"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>November</h2>
-                    <div class="spring">
-                        <p data-toggle="modal" data-target="#courseMaintenance">Course Maintenance</p>
+                    <div class="summer">
+                        <p class="cycleStart">Summer Cycle Begins</p>
                     </div>
-                    <div class="fall"></div>
-                    <div class="summer"></div>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
+                    </div>
+                    <div class="fall tasks"></div>
+                    <div class="summer tasks">
+                        <p data-toggle="modal" data-target="#schedConsult" class="idTask">Schedule Consultations</p>
+                        <p data-toggle="modal" data-target="#requestShells" class="idTask itTask">Request Course Shells</p>
+                        <p data-toggle="modal" data-target="#instructorAccounts" class="itTask">Create Instructor Accounts</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>December</h2>
-                    <div class="spring">
-                        <p class="deadline" data-toggle="modal" data-target="#videoComplete">Video Production Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#courseDevComplete">Course Development Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#media100Percent">100% Media Submitted</p>
-                        <p data-toggle="modal" data-target="#qcComplete">Quality Check Complete</p>
-                        <p class="deadline" data-toggle="modal" data-target="#facultySignOff">Faculty Sign Off</p>
+                    <div class="spring tasks">
+                        <p data-toggle="modal" data-target="#videoComplete" class="mediaTask deadline">Video Production Complete</p>
+                        <p data-toggle="modal" data-target="#courseDevComplete" class="idTask deadline">Course Development Complete</p>
+                        <p data-toggle="modal" data-target="#media100Percent"class="mediaTask deadline">100% Media Submitted</p>
+                        <p data-toggle="modal" data-target="#qcComplete" class="idTask">Quality Check Complete</p>
+                        <p data-toggle="modal" data-target="#facultySignOff" class="idTask deadline">>Faculty Sign Off</p>
                     </div>
-                    <div class="fall">
-                        <p data-toggle="modal" data-target="#endSemester">End of Semester Tasks</p>
+                    <div class="fall tasks">
+                        <p data-toggle="modal" data-target="#endSemester" class="idTask">End of Semester Tasks</p>
                     </div>
-                    <div class="generalDev">
-                        <p data-toggle="modal" data-target="#revisionsSet">Revisions Set</p>
+                    <div class="generalDev tasks">
+                        <p data-toggle="modal" data-target="#revisionsSet" class="idTask">Revisions Set</p>
                     </div>
 
-                    <div class="summer"></div>
+                    <div class="summer tasks"></div>
                 </div>
             </div>
         </div>

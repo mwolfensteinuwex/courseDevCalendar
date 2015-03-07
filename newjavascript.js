@@ -11,6 +11,26 @@ $(document).ready(function(){
     $("span.spring").hide();
     $("span.summer").hide();
 
+$(function() {
+    $('input[name=role]:radio').change(function(){
+        if( $("#idTasks").is(':checked')) {
+            $("div.tasks > .idTask").show();
+            $("div.tasks > :not(.idTask)").hide();
+        }
+        else if( $("#itTasks").is(':checked')) {
+            $("div.tasks > .itTask").show();
+            $("div.tasks > :not(.itTask)").hide();
+        }
+        else if( $("#mediaTasks").is(':checked')) {
+            $("div.tasks > .mediaTask").show();
+            $("div.tasks > :not(.mediaTask)").hide();
+        }
+        else if ( $("#allTasks").is(':checked')) {
+          $(".tasks > p").show();
+        };
+    });
+    });
+
     $("#springSelect").click(function(){
         $(".spring").show();
         $(".fall").hide();
@@ -38,6 +58,11 @@ $(document).ready(function(){
         $(".summer").show();
         $(".fall").hide();
         $(".spring").hide();
+        var summerOrder = [10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var summerSequence = document.getElementById("year");
+        for (var i = 0, l = summerOrder.length; i < l; i++) {
+            summerSequence.appendChild($sequence.get(summerOrder[i]));
+        };
     });
 
     $("#allSelect").click(function(){
@@ -54,4 +79,6 @@ $(document).ready(function(){
         };
         
     });
+    
+    
 });

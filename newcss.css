@@ -10,6 +10,7 @@ h2{
     margin-top: 3px;
     background-color: #9D9D9E;
     color: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
 }
 
 p{
@@ -21,9 +22,18 @@ p{
 
 .month{
     margin: 10px 0px 10px 0px;
-    height: 300px;
+    height: 396px;
     background-color: #D4D5D6;
+    border-radius: 10px 10px 10px 10px;
     
+}
+
+.tasks{
+    
+}
+
+.checkbox{
+    margin-left: 10px;
 }
 
 .deadline{
@@ -72,6 +82,10 @@ p{
     font-size: 1.1em;
     cursor: default;
     /*border: solid #903 3px;*/
+}
+
+#roleSelectHolder {
+    padding: 0em 1em 0em 1em;
 }
 
 #termSelect {
