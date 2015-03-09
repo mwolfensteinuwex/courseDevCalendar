@@ -25,9 +25,14 @@ $(function() {
             $("div.tasks > .mediaTask").show();
             $("div.tasks > :not(.mediaTask)").hide();
         }
+        else if( $("#pmTasks").is(':checked')) {
+            $("div.tasks > .pmTask").show();
+            $("div.tasks > :not(.pmTask)").hide();
+        }
         else if ( $("#allTasks").is(':checked')) {
           $(".tasks > p").show();
         };
+        
     });
     });
 
