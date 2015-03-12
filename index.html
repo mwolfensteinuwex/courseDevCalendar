@@ -10,10 +10,10 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="newcss.css">
+        <link rel="stylesheet" href="coursedevcal.css">
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="newjavascript.js"></script>
+        <script type="text/javascript" src="coursedevcal.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -100,9 +100,10 @@ and open the template in the editor.
                     <div class="fall tasks">
                         <p data-toggle="modal" data-target="#startConsult" class="idTask">Start 1:1 Consulting <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                         <p data-toggle="modal" data-target="#idTech" class="idTask itTask mediaTask">Identify Tech Requirements</p>
+                        <p class="itTask">Course Shells Created</p>
                     </div>
                     <div class="summer tasks">
-                        <p class="itTask">Course Shells Created</p>
+                        
                         <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
                         <p data-toggle="modal" data-target="#mediaPlan" class="idTask mediaTask">Establish Media Plan <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                         <p data-toggle="modal" data-target="#mediaConsultation" class="mediaTask">Media Consultation <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
@@ -139,7 +140,7 @@ and open the template in the editor.
                         <p data-toggle="modal" data-target="#instructorAccounts" class="itTask">Create Instructor Accounts</p>
                     </div>
                     <div class="fall tasks">
-                        <p  class="itTask">Course Shells Created</p>
+                        
                         <p data-toggle="modal" data-target="#mediaPlan" class="idTask mediaTask">Establish Media Plan <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                         <p data-toggle="modal" data-target="#mediaConsultation" class="mediaTask">Media Consultation <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                         <p data-toggle="modal" data-target="#mediaTestSubmit" class="mediaTask">Media Test Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
@@ -170,6 +171,7 @@ and open the template in the editor.
                         <p data-toggle="modal" data-target="#startConsult" class="idTask">Start 1:1 Consulting <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                         <p data-toggle="modal" data-target="#idTech" class="idTask itTask mediaTask">Identify Tech Requirements</p>
                         <p data-toggle="modal" data-target="#endSemester" class="idTask">End of Semester Tasks</p>
+                        <p class="itTask">Course Shells Created</p>
                     </div>
                     <div class="fall tasks">
                         
@@ -195,9 +197,7 @@ and open the template in the editor.
             <div class="col-lg-2 col-md-3 col-sm-4 months">
                 <div class="month">
                     <h2>July</h2>
-                    <div class="spring tasks">
-                        <p class="itTask">Course Shells Created</p>
-                    </div>
+                    <div class="spring tasks"></div>
                     <div class="fall tasks">
                         <p data-toggle="modal" data-target="#videoComplete" class="mediaTask deadline">Video Production Complete</p>
                         <p data-toggle="modal" data-target="#courseDevComplete" class="idTask deadline">Development Complete <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
@@ -282,7 +282,9 @@ and open the template in the editor.
                         <p data-toggle="modal" data-target="#revisionsSet" class="pmTask">Revisions Set</p>
                     </div>
 
-                    <div class="summer tasks"></div>
+                    <div class="summer tasks">
+                        <p class="itTask">Course Shells Created</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -356,9 +358,9 @@ and open the template in the editor.
                         <h4 class="modal-title" id="requestShellsLabel">Request New Development/Revision Course Shells</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Request all course shells for maintenance, revision, and new developments by this time.</p>
+                        <p>Put in a support ticket to request all course shells for maintenance, revision, and new developments by this time.</p>
                         <p>One request for all the shells in a given program is ideal.</p>
-                        <p>Resource: SCML? What's the process here?</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/it/" target="_blank">Support Ticket Form</a> </p>
                     </div>
                 </div>
             </div> 
@@ -372,7 +374,8 @@ and open the template in the editor.
                         <h4 class="modal-title" id="instructorAccountsLabel">Create New Instructor Accounts for D2L</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Something goes here?</p>
+                        <p>Put in a support ticket to create any brand new instructor accounts.</p>
+                        <p>Resource: <a href="http://courses.wlearn.com/it/" target="_blank">Support Ticket Form</a> </p>
                     </div>
                 </div>
             </div> 
@@ -401,8 +404,8 @@ and open the template in the editor.
                         <h4 class="modal-title" id="startConsultLabel">Start 1:1 Consulting</h4>
                     </div>
                     <div class="modal-body">
-                        <p>One-on-one consultation between instructional designer and faculty member begins at the faculty retreat.</p>
-                        <p>Depending on the time available at the retreat, this may be a more comprehensive consultation meeting or an informal, relationship-building conversation that leads to scheduling the comprehensive consultation meeting.</p>
+                        <p>One-on-one consultation between instructional designer and faculty member begins.</p>
+                        <p>Establish contact and schedule a comprehensive consultation meeting.</p>
                         <p>Resource: <a href="http://courses.wlearn.com/dnd/wikka.php?wakka=Pre-Development" target="_blank">Instructional Design Wiki (Pre-Development)</a></p> 
                     </div>
                 </div>
@@ -447,7 +450,7 @@ and open the template in the editor.
                         <h4 class="modal-title" id="techDiscussLabel">Discuss Technology Requirements</h4>
                     </div>
                     <div class="modal-body">
-                        <p>IT, ID, & Media may need to meet and discuss any technologies that will be used for courses based on the requirements defined in May, including new technologies to develop or integrate.</p>
+                        <p>IT, ID, & Media may need to meet and discuss any technologies that will be used for courses based on prior evaluation including new technologies to develop or integrate.</p>
                     </div>
                 </div>
             </div> 
@@ -477,7 +480,7 @@ and open the template in the editor.
                         <h4 class="modal-title" id="idBriefsMediaLabel">ID Briefs Media on Courses</h4>
                     </div>
                     <div class="modal-body">
-                        <p>ID notifies media of the number and type of media for each new or revised course, and consults with media about any unknowns and schedules media plan consultation with faculty if needed (see September).</p>
+                        <p>ID notifies media of the number and type of media for each new or revised course, and consults with media about any unknowns and schedules media plan consultation with faculty if needed (see <em>Establish Media Plan</em>).</p>
                     </div>
                 </div>
             </div> 
@@ -535,8 +538,9 @@ and open the template in the editor.
                     </div>
                     <div class="modal-body">
                         <p>ID schedules a phone conference with the instructor and the lead media specialist.  The objective of the meeting is to share ideas about media usage and finalize production details and schedules.</p>
-                        <p>The media specialist should have enough information to accurately fill out the <a href="https://docs.google.com/spreadsheet/ccc?key=0AmSP_CwSPnapdFFxTmZxYkdTLXFjaVRGZXpwSjlrb2c&usp=drive_web#gid=94" target="_blank">media plan</a> for the course following the meeting.</p>
-                        <p>Resource: Work on developing a document to capture information.</p>
+                        <p>The media specialist should have enough information to accurately fill out the media plan for the course following the meeting.</p>
+                        <p>The Media team is planning to develop a document to more effectively capture information for the media plan.</p>
+                        <p>Resource: <a href="https://docs.google.com/spreadsheet/ccc?key=0AmSP_CwSPnapdFFxTmZxYkdTLXFjaVRGZXpwSjlrb2c&usp=drive_web#gid=94" target="_blank">Sample media plan (Spring 2015)</a></p>
                     </div>
                 </div>
             </div> 
