@@ -18,20 +18,23 @@ and open the template in the editor.
     <body>
         <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12" id="devNotes">
+            
+            <!--This is all top of the page content, it includes the title, buttons to select terms, and checkboxes for roles-->
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <h1>Course Development Timeline <span class="spring small">(Spring Term)</span><span class="fall small">(Fall Term)</span><span class="summer small">(Summer Term)</span></h1>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12" id="devNotes">
                 <p><em>Notes: Double filters now work by role and term. <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> indicates an instructor facing task.</em></p>
             </div>
-            <!--This is all top of the page content, it includes the title, buttons to select terms, and checkboxes for roles-->
-            <div class="col-lg-8 col-md-9 col-sm-12">
-                <h1>Course Development Timeline <span class="spring">(Spring Term)</span><span class="fall">(Fall Term)</span><span class="summer">(Summer Term)</span></h1>
-            </div>
-            <div id="termSelect" class="col-lg-4 col-md-3 col-sm-6">
+        </div>
+        <div class="row">
+            <div id="termSelect" class="col-lg-6 col-md-6 col-sm-12">
                 <button class="btn btn-default" type="submit" id="allSelect"><strong>All</strong></button>
                 <button class="btn btn-default" type="submit" id="fallSelect"><strong>Fall</strong></button>            
                 <button class="btn btn-default" type="submit" id="springSelect"><strong>Spring</strong></button>
                 <button class="btn btn-default" type="submit" id="summerSelect"><strong>Summer</strong></button>
             </div>
-            <div id="roleSelectHolder" class="col-lg-4 col-lg-offset-8 col-md-3 col-md-offset-9 col-sm-6">
+            <div id="roleSelectHolder" class="col-lg-6 col-md-6 col-sm-12">
                 <form id="roleSelect">
                     <div class="form-inline">
                             <div class="radio">

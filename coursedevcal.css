@@ -3,6 +3,10 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
+h1{
+
+}
+
 h2{
     padding: 5px 3px 3px 5px;
     font-size: 1.5em;
@@ -21,14 +25,10 @@ p{
 }
 
 .month{
-    margin: 10px 0px 10px 0px;
+    margin: 10px -8px 10px -8px;
     height: 396px;
     background-color: #D4D5D6;
     border-radius: 10px 10px 10px 10px;
-    
-}
-
-.tasks{
     
 }
 
@@ -39,38 +39,6 @@ p{
 .deadline{
     color: #B2120E;
     font-weight: bold;
-}
-
-.spring {
-    
-}
-
-.fall {
-    
-}
-
-.summer {
-    
-}
-
-.months {
-    
-}
-
-.idTask {
-    
-}
-
-.itTask {
-    
-}
-
-.pmTask {
-    
-}
-
-.mediaTask {
-    
 }
 
 .glyphicon-exclamation-sign {
@@ -101,15 +69,14 @@ p{
     font-weight: bold;
     font-size: 1.1em;
     cursor: default;
-    /*border: solid #903 3px;*/
 }
 
 #roleSelectHolder {
-    padding: 0em 1em 0em 1em;
+    padding: 5px 0px 0px 25px;
 }
 
 #termSelect {
-    margin: 1.34em 0em .34em 0em;
+    
 }
 
 #springSelect {
@@ -143,8 +110,48 @@ p{
 #devNotes{
     padding-top: 5px;
 }
+
+/*
+empty classes for JS
+*/
+
+.spring {
+    
+}
+
+.fall {
+    
+}
+
+.summer {
+    
+}
+
+.months {
+    
+}
+
+.idTask {
+    
+}
+
+.tasks{
+    
+}
+
+.itTask {
+    
+}
+
+.pmTask {
+    
+}
+
+.mediaTask {
+    
+}
+
 /* 
     Created on : Jan 28, 2015, 3:28:39 PM
     Author     : moses.wolfenstein
 */
-
