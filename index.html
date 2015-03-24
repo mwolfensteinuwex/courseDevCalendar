@@ -168,7 +168,7 @@ and open the template in the editor.
                         <p class="itTask">Course Shells Created</p>
                     </div>
                     <div class="fall tasks">
-                        <p data-toggle="modal" data-target="content25Percent" class="idTask deadline">25% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                        <p data-toggle="modal" data-target="#content25Percent" class="idTask deadline">25% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                     <div class="summer">
                         <p class="deadline">Summer - Course Live</p>
@@ -184,10 +184,10 @@ and open the template in the editor.
                     <div class="spring tasks">
                         <p data-toggle="modal" data-target="#techDiscuss" class="idTask itTask mediaTask">Discuss Tech Requirements</p>
                     </div>
-                    <div class="fall tasks">
-                        <p data-toggle="modal" data-target="#content25percent" class="idTask deadline">25% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
-                        <p data-toggle="modal" data-target="#media50Percent" class="mediaTask deadline">50% Media Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                    <div class="fall tasks">                     
+                        <p data-toggle="modal" data-target="#media50Percent" class="mediaTask deadline">50% Media Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>                        
                         <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
+                        <p data-toggle="modal" data-target="#content50Percent" class="deadline idTask">50% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                     <div class="summer tasks">
                         <p data-toggle="modal" data-target="#schedConsult" class="idTask">Schedule Consultations</p>
@@ -252,6 +252,7 @@ and open the template in the editor.
                     <h2>October</h2>
                     <div class="spring tasks">
                         <p data-toggle="modal" data-target="#media50Percent" class="mediaTask deadline">50% Media Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                        <p data-toggle="modal" data-target="#content50Percent" class="deadline idTask">50% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                     <div class="fall tasks">
                         <p data-toggle="modal" data-target="#mediaReports" class="mediaTask">Generate Media Reports</p>
@@ -301,6 +302,7 @@ and open the template in the editor.
 
                     <div class="summer tasks">
                        <p data-toggle="modal" data-target="#media50Percent" class="deadline mediaTask">50% Media Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                       <p data-toggle="modal" data-target="#content50Percent" class="deadline idTask">50% Content Submitted <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                 </div>
             </div>
@@ -633,7 +635,7 @@ and open the template in the editor.
                         <h4 class="modal-title" id="content25PercentLabel">25% of Content Submitted for Development</h4>
                     </div>
                     <div class="modal-body">
-                        <p>This date signifies that content for half of the course has been submitted by the instructor to the instructional designer.</p>
+                        <p>This date signifies that roughly one fourth of the course content has been submitted by the instructor to the instructional designer.</p>
                         <p><em>Additional content for this item?</em></p>
                     </div>
                 </div>
@@ -687,6 +689,53 @@ and open the template in the editor.
                 </div>
             </div> 
         </div>
+        <!--50% of Content Submitted for Development-->
+        <div class="modal fade" id="content50Percent" tabindex="-1" role="dialog" aria-labelledby="content50PercentLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="content50PercentLabel">50% of Content Submitted for Development</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This date signifies that content for half of the course has been submitted by the instructor to the instructional designer.</p>
+                        <p>This milestone also corresponds with the Media deadline <strong>50% of Media Submitted for Development.</strong></p>
+                        <p><em>Additional content for this item?</em></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--50% of Media Submitted for Development-->
+        <div class="modal fade" id="media50Percent" tabindex="-1" role="dialog" aria-labelledby="media50PercentLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="media50PercentLabel">50% of Media Submitted for Development</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This date signifies that media for half of the course has been submitted by the instructor to the instructional designer using the media uploader web application.</p>
+                        <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the <strong>Video Production Complete</strong> calendar event.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--100% of Content Submitted for Development-->
+        <div class="modal fade" id="content100Percent" tabindex="-1" role="dialog" aria-labelledby="content100PercentLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="content100PercentLabel">100% of Content Submitted for Development</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This date signifies that content for the entire course has been submitted by the instructor to the instructional designer.</p>
+                        <p>This milestone also corresponds with the Media deadline <strong>100% of Media Submitted for Development.</strong></p>
+                        <p><em>Additional content for this item?</em></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
         <!--100% of Media Submitted for Development-->
         <div class="modal fade" id="media100Percent" tabindex="-1" role="dialog" aria-labelledby="media100PercentLabel" aria-hidden="true">
@@ -698,7 +747,7 @@ and open the template in the editor.
                     </div>
                     <div class="modal-body">
                         <p>This date signifies that media for the entire course has been submitted by the instructor to the instructional designer using the media uploader web application.</p>
-                        <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the Video Production Complete calendar event.</p>
+                        <p>NOTE:  If the instructor is leveraging CEOEL's video expertise to film course content, that deadline falls under the <strong>Video Production Complete</strong> calendar event.</p>
                     </div>
                 </div>
             </div> 
