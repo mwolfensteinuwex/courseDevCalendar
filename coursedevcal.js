@@ -40,7 +40,7 @@ $(function() {
         $(".spring").show();
         $(".fall").hide();
         $(".summer").hide();
-        var springOrder = [4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3];
+        var springOrder = [3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2];
         var springSequence = document.getElementById("year");
         for (var i = 0, l = springOrder.length; i < l; i++) {
             springSequence.appendChild($sequence.get(springOrder[i]));
@@ -63,7 +63,7 @@ $(function() {
         $(".summer").show();
         $(".fall").hide();
         $(".spring").hide();
-        var summerOrder = [10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var summerOrder = [5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4];
         var summerSequence = document.getElementById("year");
         for (var i = 0, l = summerOrder.length; i < l; i++) {
             summerSequence.appendChild($sequence.get(summerOrder[i]));
