@@ -18,15 +18,14 @@ h2{
 }
 
 p{
-    padding: 0px 5px 0px 5px;
+    padding: 2px 5px 2px 9px;
     background-color: #FFFFFF;
     margin: 5px 2px 5px 2px;
-    padding: 2px 0px 2px 4px;
 }
 
 .month{
     margin: 10px -8px 10px -8px;
-    height: 396px;
+    height: 416px;
     background-color: #D4D5D6;
     border-radius: 10px 10px 10px 10px;
     
@@ -70,6 +69,73 @@ p{
     font-size: 1.1em;
     cursor: default;
 }
+
+/*.splitLeft{
+    width: 0;
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 	
+    border-left: 10px solid #9D9D9E;
+    position: absolute;
+    right: 99%;
+}
+
+.splitRight{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 	
+    border-right: 10px solid #9D9D9E;
+    position: absolute;
+    left: 99%;
+}
+
+.splitLine{
+    width: 100%;
+    height: 4px;
+    background-color: #9D9D9E;
+    position: absolute;
+    top: 8px;
+}
+*/
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: #9D9D9E;
+    margin: 0px;
+    
+}
+
+.splitter{
+    position: relative;
+    width: 96%;
+    height:18px;
+    left: 2%;
+    right: 2%;
+}
+
+.splitLineText{
+    color: #9D9D9E;
+    width: 1em;
+    padding: 0px 5px;
+    white-space: nowrap;
+    margin: 0px;
+}
+
+/*.splitCell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.splitLine{
+    height: 2px;
+    background-color: #9D9D9E;
+    width: 100%;
+    margin: 0px 3px 0px 3px;
+}*/
 
 #roleSelectHolder {
     padding: 5px 0px 0px 25px;
