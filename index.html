@@ -92,7 +92,7 @@ and open the template in the editor.
                         <p data-toggle="modal" data-target="#courseMaintenance" class="idTask">Course Maintenance</p>
                     </div>
                     <div class="spring">
-                        <p class="deadline" data-toggle="modal" data-target="#springCourseLive">Spring - Course Live <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                        <p class="deadline" data-toggle="modal" data-target="#courseLive">Spring - Course Live <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                 </div>
             </div>
@@ -223,7 +223,7 @@ and open the template in the editor.
                     </div>
 
                     <div class="summer">
-                        <p class="deadline">Summer - Course Live</p>
+                        <p class="deadline" data-toggle="modal" data-target="#courseLive">Summer - Course Live <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                 </div>
             </div>
@@ -318,7 +318,7 @@ and open the template in the editor.
                         <p data-toggle="modal" data-target="#techDiscuss" class="idTask itTask mediaTask">Discuss Tech Requirements</p>
                     </div>
                     <div class="fall">
-                    <p class="deadline" data-toggle="modal" data-target="#fallCourseLive">Fall - Course Live <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
+                    <p class="deadline" data-toggle="modal" data-target="#courseLive">Fall - Course Live <span class="glyphicon glyphicon-exclamation-sign pull-right" aria-hidden="true"></span></p>
                     </div>
                     
                 </div>
@@ -447,20 +447,7 @@ and open the template in the editor.
             </div>
         </div>
         <!--Modal content below this-->
-        <!--Spring Course Live-->
-        <div class="modal fade" id="springCourseLive" tabindex="-1" role="dialog" aria-labelledby="springCourseLiveLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="springCourseLiveLabel">Spring Course Live</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>100% of the course is finished by the day the course opens (Preview Week).</p>
-                    </div>
-                </div>
-            </div> 
-        </div>
+        
         <!--Plan Faculty Retreat-->
         <div class="modal fade" id="planRetreat" tabindex="-1" role="dialog" aria-labelledby="planRetreatLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -674,13 +661,13 @@ and open the template in the editor.
                 </div>
             </div> 
         </div>
-        <!--Fall Term - Course Live-->
-        <div class="modal fade" id="fallCourseLive" tabindex="-1" role="dialog" aria-labelledby="fallCourseLiveLabel" aria-hidden="true">
+        <!--Course Live-->
+        <div class="modal fade" id="courseLive" tabindex="-1" role="dialog" aria-labelledby="courseLiveLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="fallCourseLiveLabel">Fall Term - Course Live</h4>
+                        <h4 class="modal-title" id="courseLiveLabel">Course Live</h4>
                     </div>
                     <div class="modal-body">
                         <p>100% of the course is finished by the day the course opens (Preview Week).</p>
@@ -826,7 +813,7 @@ and open the template in the editor.
                     </div>
                     <div class="modal-body">
                         <p>All course development is complete.</p>
-                        <p>If course development is not complete, hit the <a href="http://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg" target="_blank">panic button</a>panic button.</p>
+                        <p>If course development is not complete, hit the <a href="http://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg" target="_blank">panic button</a>.</p>
                     </div>
                 </div>
             </div> 
